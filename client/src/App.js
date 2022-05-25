@@ -4,8 +4,11 @@ import BookingsContainer from './containers/BookingsContainer';
 
 function App() {
   return (
+
     <div className="App">
+      <header>
       <h1>The Grand Edinburgh Hotel</h1>
+      </header>
       {/* <BookingsForm/> */}
       <BookingsContainer/>
     </div>

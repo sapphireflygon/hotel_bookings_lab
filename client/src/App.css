@@ -1,3 +1,96 @@
 .App {
   text-align: center;
+  background-color: #b6dcfe93;
+  height: 2000px
+  
 }
+
+body{
+  background-color: #b6dcfe93;
+  background-image: url('./images/hotel2.jpg');
+  background-size: cover;
+  
+
+}
+
+header {
+  background-color: #DEC5E3;
+  font-family: 'Gravitas One', cursive;
+  position:sticky;
+  top:0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #c6ad78;
+  text-shadow: 2px 2px #164b7aae;
+  font-size: 30px
+  ;
+}
+
+.booking-form-container{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+/* .booking-form{
+
+  width: 500px;
+  height:150px;
+  background-color: #b6dcfe93;
+  border-radius: 15px;
+  border: 1px solid #b6dcfeae;
+  padding:80px;
+  font-family: 'Poppins', sans-serif;
+} */
+
+form {
+  /* background-color: #b6dcfe93; */
+  /* border-radius: 15px; */
+  /* border: 1px solid #b6dcfeae; */
+  /* padding:80px; */
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+.booking-list{
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: 20px;
+  margin-left: 20px;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 20px;
+  
+}
+
+.booking-card{
+  display:flex;
+  flex-direction: column;
+  width:300px;
+  height: 300px;
+  background-color: #c6ad78b0;
+  box-shadow: 2px 2px 5px 2px #164b7aae;
+  border-radius: 10px;
+  
+}
+
+
+
+
+
+/* 
+form{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  text-align: left;
+} */
+/* 
+input[type=text] {
+  width: 200px;
+
+} */

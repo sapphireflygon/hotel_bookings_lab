@@ -45,9 +45,15 @@ const BookingsContainer = () => {
 
     return(
         <>
-            <h4> This is the bookings container</h4>
+            <div className="booking-form-container">
+            <div className="booking-form">
             <BookingsForm addBooking={addBooking} />
+            </div>
+            </div>
+            <div className="booking-list">
             <BookingsList bookings={hotelBookings} removeBooking={removeBooking} changeGuestStatus={changeGuestStatus} />
+            </div>
+            
         </>
     )
 }

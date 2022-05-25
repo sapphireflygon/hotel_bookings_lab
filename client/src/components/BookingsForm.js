@@ -33,9 +33,7 @@ const BookingsForm = ( {addBooking} ) => {
                     <input type='text' onChange={onChange} id="name" placeholder="Guest name here..." required/>
                 <label htmlFor='email'>Email: </label>
                     <input type='text' onChange={onChange} id="email" placeholder="Guest's email address here..." required/>
-                {/* <label htmlFor='status' name="radio-buttons" value={newBookingStatus ? "true" : "false"}>Checked in?</label>
-                    <input name="radio-buttons" type="radio" value="true" onChange={handleStatusChange}/> Yes
-                    <input name="radio-buttons" type="radio" value="false" onChange={handleStatusChange}/> No */}
+                
                 <input type="submit" value="Save New Booking" id="save-button"/>
             </form>
         </>
@@ -43,3 +41,10 @@ const BookingsForm = ( {addBooking} ) => {
 };
 
 export default BookingsForm;
+
+
+
+
+{/* <label htmlFor='status' name="radio-buttons" value={newBookingStatus ? "true" : "false"}>Checked in?</label>
+                    <input name="radio-buttons" type="radio" value="true" onChange={handleStatusChange}/> Yes
+                    <input name="radio-buttons" type="radio" value="false" onChange={handleStatusChange}/> No */}
