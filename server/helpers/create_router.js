@@ -57,7 +57,7 @@ const createRouter = function (collection) {
         });
     });
 
-    router.put('/:id', (req, res) => {
+    router.patch('/:id', (req, res) => {
         const id = req.params.id;
         const updatedData = req.body;
         collection
