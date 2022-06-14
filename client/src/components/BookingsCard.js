@@ -15,13 +15,13 @@ const BookingsCard = ( { booking, removeBooking, changeGuestStatus }) => {
     return (
         <>
             <div className="booking-card">
-                <h3>Name: {booking.name}</h3>
-                <p>Email: {booking.email}</p>
-                <div>Status: { booking.status 
-                                ? <div>Checked In<button onClick={handleCheckIn}>Check Guest Out</button></div>
-                                : <div>Not Checked In<button onClick={handleCheckIn}>Check Guest In</button></div> 
+                <h3><u>Name</u>: {booking.name}</h3>
+                <p><u>Email</u>: {booking.email}</p>
+                <div><u>Status</u>: { booking.status 
+                                ? <div>Checked In<br/><button onClick={handleCheckIn} className="check-out-btn">Check Guest Out</button></div>
+                                : <div>Not Checked In<br/><button onClick={handleCheckIn} className="check-in-btn">Check Guest In</button></div> 
                             }</div>
-                <button onClick={handleDelete}>Delete</button>
+                <button onClick={handleDelete} className="delete-btn">Delete</button>
             </div>
         </>
     );

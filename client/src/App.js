@@ -7,9 +7,8 @@ function App() {
 
     <div className="App">
       <header>
-      <h1>The Grand Edinburgh Hotel</h1>
+        <h1>The Grand Edinburgh Hotel</h1>
       </header>
-      {/* <BookingsForm/> */}
       <BookingsContainer/>
     </div>
   );

@@ -33,25 +33,8 @@ header {
 
 }
 
-/* .booking-form{
-
-  width: 500px;
-  height:150px;
-  background-color: #b6dcfe93;
-  border-radius: 15px;
-  border: 1px solid #b6dcfeae;
-  padding:80px;
-  font-family: 'Poppins', sans-serif;
-} */
-
 form {
-  /* background-color: #b6dcfe93; */
-  /* border-radius: 15px; */
-  /* border: 1px solid #b6dcfeae; */
-  /* padding:80px; */
   font-family: 'Poppins', sans-serif;
-
-
 }
 
 .booking-list{
@@ -67,6 +50,7 @@ form {
 }
 
 .booking-card{
+  font-family: 'Poppins', sans-serif;
   display:flex;
   flex-direction: column;
   width:300px;
@@ -74,23 +58,34 @@ form {
   background-color: #c6ad78b0;
   box-shadow: 2px 2px 5px 2px #164b7aae;
   border-radius: 10px;
-  
 }
 
+.delete-btn {
+  margin: 2em;
+  padding: 0.5em;
+  align-self: center;
+  background-color: #164b7aae;
+  color: #f3cb76;
+  width: 5em;
+  border-radius: 5px;
+  border: 2px solid #7d6e4e;
+  cursor: pointer;
+  font-weight: bold;
+}
 
+.check-in-btn, .check-out-btn, #save-button{
+  background-color: #f3cb76;
+  border: 2px solid #164b7aae;
+  color: #164b7aae;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0.5em;
+  cursor: pointer;
+  padding: 0.5em;
+}
 
-
-
-/* 
-form{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 10px;
-  text-align: left;
-} */
-/* 
-input[type=text] {
-  width: 200px;
-
-} */
+#name, #email {
+  background-color: #f9ecfb;
+  margin: 1em;
+  padding: 0.5em;
+}

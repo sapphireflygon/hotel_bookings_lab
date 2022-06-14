@@ -3,15 +3,7 @@ import { postBooking } from '../services/BookingsService';
 
 const BookingsForm = ( {addBooking} ) => {
 
-    // state? newBookingStatus
     const [formData, setFormData] = useState({});
-
-
-    // functions to write: handleStatusChange
-
-    // postBooking and addBooking to be written in service/container respectively???
-
-    
 
     const onChange = (event) => {
         formData[event.target.id] = event.target.value;
@@ -32,7 +24,7 @@ const BookingsForm = ( {addBooking} ) => {
                 <label htmlFor='name'>Name: </label>
                     <input type='text' onChange={onChange} id="name" placeholder="Guest name here..." required/>
                 <label htmlFor='email'>Email: </label>
-                    <input type='text' onChange={onChange} id="email" placeholder="Guest's email address here..." required/>
+                    <input type='email' onChange={onChange} id="email" placeholder="example@email.com" required/>
                 
                 <input type="submit" value="Save New Booking" id="save-button"/>
             </form>
@@ -41,10 +33,3 @@ const BookingsForm = ( {addBooking} ) => {
 };
 
 export default BookingsForm;
-
-
-
-
-{/* <label htmlFor='status' name="radio-buttons" value={newBookingStatus ? "true" : "false"}>Checked in?</label>
-                    <input name="radio-buttons" type="radio" value="true" onChange={handleStatusChange}/> Yes
-                    <input name="radio-buttons" type="radio" value="false" onChange={handleStatusChange}/> No */}

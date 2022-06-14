@@ -7,7 +7,6 @@ import { getBookings, updateBooking } from "../services/BookingsService";
 const BookingsContainer = () => {
 
     const [hotelBookings, setHotelBookings] = useState([]);
-    // const [status, setStatus] = useState(false)
 
     useEffect(()=>{
         getBookings().then((allBookings) => {
@@ -23,7 +22,6 @@ const BookingsContainer = () => {
         // copy hotelBookings, get indexOf old booking, replace old with new, setHotelBookings to newArr
         const newArr = [...hotelBookings];
         const indexOfOldBooking = newArr.indexOf(booking);
-        console.log(indexOfOldBooking)
         const updatedArr = newArr.splice(indexOfOldBooking, 1, newBookingStatus);
         setHotelBookings(updatedArr);
     };
